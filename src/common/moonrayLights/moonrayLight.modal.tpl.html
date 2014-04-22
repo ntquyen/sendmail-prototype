@@ -1,0 +1,31 @@
+<div class="modal-header">
+    <h3>Assign contact(s) to sequence(s)</h3>
+</div>
+<div class="modal-body">
+    <div ng-if="processing">
+        <span>We are processing. Please wait </span><img src="/desktopModules/AgencyRevContactIntegrations/Frontend/assets/spinner.gif" alt="Please wait" />
+    </div>
+    <div ng-if="!processing">
+        <div ng-if="data.success" class="alert alert-success">
+            <p>Great job! You have assigned contacts to campaigns successully</p>
+            <br>
+            <p>Contacts</p>
+            <ul>
+                <li ng-repeat="contact in data.contacts">
+                    <span ng-bind="contact.firstName"></span>&nbsp;<span ng-bind="contact.lastName"></span>&nbsp;&lt;<span ng-bind="contact.email"></span>&gt;
+                </li>
+            </ul>
+            <br>
+            <p>Campaigns</p>
+            <ul>
+                <li ng-repeat="campaign in data.campaigns">
+                    <span ng-bind="campaign.name"></span>
+                </li>
+            </ul>
+        </div>
+        <div ng-if="!data.success" class="alert alert-danger" ng-bind="data.error"></div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="doAnother()" ng-if="!processing">Do another</button>
+</div>

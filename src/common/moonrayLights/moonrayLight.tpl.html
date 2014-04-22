@@ -1,0 +1,13 @@
+<div class="panel panel-info">
+	<div class="panel-heading">Agency Revolution Engine Lights</div>
+	<div class="panel-body">
+		<p>Use this simple interface to find people in the Revolution Engine and start a sequence add a new contact to the Revolution Engine change basic contact information for a contact</p>
+		<form role="form">
+			<div ar-contact-selection ng-model="data.contacts"></div>
+			<div ng-if="data.contacts.length" ar-campaign-selection ng-model="data.campaigns"></div>
+			<div class="form-group" ng-if="data.contacts.length && data.campaigns.length">
+				<button type="submit" class="btn btn-primary" ng-click="assign()">Assign</button>
+			</div>
+		</form>
+	</div>
+</div>

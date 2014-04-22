@@ -1,0 +1,6 @@
+# define the runtime language
+runtime "node"
+# exec is the file that will be executed:
+exec "sendmail_worker.js"
+dir "node_modules"
+file "package.json"

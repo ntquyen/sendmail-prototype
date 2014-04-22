@@ -1,0 +1,37 @@
+<div>
+	<form ng-submit="addReceiver()">
+		<table>
+			<tbody>
+				<tr>
+					<td></td>
+					<td>Name</td>
+					<td>Email</td>
+				</tr>
+				
+				<tr>
+					<td>Sender:</td>
+					<td><input type="text" ng-model="sender.name"/></td>
+					<td><input type="text" ng-model="sender.email"/></td>
+				</tr>
+				<tr>
+					<td>Receiver:</td>
+					<td><input type="text" ng-model="receiver.name"/></td>
+					<td><input type="text" ng-model="receiver.email"/></td>
+					<td><input type="submit" value="Add"/></td>
+				</tr>
+				
+				<tr>
+					<td>Receiver list:</td>
+					<td col="2">
+						<div ng-repeat="rec in receivers">
+							<a href="mailto: {{ rec.email }}">{{ rec.name }}</a>
+						</div>	
+					</td>
+				</tr>
+				<tr>
+					<td><a ng-click="send()">send</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</div>

@@ -1,0 +1,8 @@
+/build
+/release
+/node_modules
+/vendor
+/fakeBackend/node_modules
+/sendmailworker/node_modules
+npm-debug.log
+**.DS_Store
