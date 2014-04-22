@@ -35,7 +35,7 @@ $ npm install
 ```
 
 #### 3. Prepare iron.io worker
-Copy you iron.json file provided by iron.io to `sendmail-prototype/sendmailworker` folder
+Copy your iron.json file provided by iron.io to `sendmail-prototype/sendmailworker` folder
 
 ```sh
 $ cd sendmail-prototype/sendmailworker
