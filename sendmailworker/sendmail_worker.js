@@ -25,7 +25,7 @@ fs.readFile(process.argv[payloadIndex], 'ascii', function(err, data) {
 		process.exit(1);
 	}
 	var payload = JSON.parse(data);
-	var mandrill_client = new mandrill.Mandrill(payload.api_key);
+	var mandrill_client = new mandrill.Mandrill(payload.apiKey);
 	var tos = [];
 	for (var i = 0; i < payload.emails.receivers.length; i++) {
 		var to = {

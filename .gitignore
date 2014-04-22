@@ -4,5 +4,6 @@
 /vendor
 /fakeBackend/node_modules
 /sendmailworker/node_modules
+/sendmailworker/iron.json
 npm-debug.log
 **.DS_Store

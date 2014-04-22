@@ -1,12 +1,12 @@
 /* GET users listing. */
 exports.sendmail = function(req, res) {
-	// console.log(req.body);
-	var token = 'IronIOToken';
-	var projectId = 'IronIOProjectID';
+	console.log(req.body);
+	var token = req.body.token;
+	var projectId = req.body.projectId;
 	var https = require("https");
 	var payload = {
 	    "emails": req.body,
-	    "api_key": "MandrillAPIKey"
+	    "apiKey": req.body.apiKey
 	};
 	var req_json = {
 	    "tasks": [{

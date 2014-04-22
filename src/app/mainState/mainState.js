@@ -42,6 +42,9 @@ app.controller('MainStateCtrl', ['$scope', '$state', 'appConfig', 'testServiceAp
             name: 'test',
             email: 'test@mail.com'
         };
+        $scope.ironioToken = '';
+        $scope.ironioProjectId = '';
+        $scope.mandrillAPIKey = '';
         $scope.addReceiver = function() {
             $scope.receivers.push($scope.receiver);
             $scope.receiver = {
@@ -52,6 +55,9 @@ app.controller('MainStateCtrl', ['$scope', '$state', 'appConfig', 'testServiceAp
         };
         $scope.send = function() {
             var payload = {
+                "token": $scope.ironioToken,
+                "projectId": $scope.ironioProjectId,
+                "apiKey": $scope.mandrillAPIKey,
                 "sender": $scope.sender,
                 "receivers": $scope.receivers
             };
