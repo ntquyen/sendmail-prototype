@@ -40,10 +40,11 @@ var token = 'IronIOToken';  // Put your iron.io token here
 var projectId = 'IronIOProjectID'; // Put your iron.io project id here
 ...
 var payload = {
-	    "emails": req.body,
-	    "api_key": "MandrillAPIKey" // Put your mandrill API key here
-	};
 	...
+	"api_key": "MandrillAPIKey" // Put your mandrill API key here
+	...
+};
+...
 ```
 
 
