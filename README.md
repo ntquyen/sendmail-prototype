@@ -33,22 +33,9 @@ $ grunt
 $ cd sendmail-prototype/fakeBackend
 $ npm install
 ```
-Open `sendmail-prototype/fakeBackend/routes/mandrill.js` file and edit the following lines:
-
-```js
-var token = 'IronIOToken';  // Put your iron.io token here
-var projectId = 'IronIOProjectID'; // Put your iron.io project id here
-...
-var payload = {
-	...
-	"api_key": "MandrillAPIKey" // Put your mandrill API key here
-	...
-};
-...
-```
-
 
 #### 3. Prepare iron.io worker
+Copy you iron.json file provided by iron.io to `sendmail-prototype/sendmailworker` folder
 
 ```sh
 $ cd sendmail-prototype/sendmailworker
