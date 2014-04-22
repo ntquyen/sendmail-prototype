@@ -1,14 +1,14 @@
 sendmail-prototype
 ==================
 
-This is a prototype of sending email, using iron.io for message bus and mandrill for email delivery API
+This is a prototype of sending email, using iron.io for message bus and mandrill for email delivery.
 
 ## Quick Start
 
 The project uses AngularJS as front-end framework, express/nodejs as back-end server, iron.io as worker to deliver email. So make sure to have: 
 
 - `nodeJS`, `bower`, `grunt` installed on your machine, 
-- an mandrill account and get one of your API key
+- a mandrill account and get one of your API key
 - an [iron.io](http://www.iron.io/) project (it has a free package so don't worry!). Save your project's ID and token, you're gonna use it later.
 - `iron_worker_ng` installed on your machine:
 
