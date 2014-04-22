@@ -36,12 +36,12 @@ $ npm install
 Open `sendmail-prototype/fakeBackend/routes/mandrill.js` file and edit the following lines:
 
 ```js
-var token = 'IronIOToken';  // Put your iron.io token 
-var projectId = 'IronIOProjectID';
+var token = 'IronIOToken';  // Put your iron.io token here
+var projectId = 'IronIOProjectID'; // Put your iron.io project id here
 ...
 var payload = {
 	    "emails": req.body,
-	    "api_key": "MandrillAPIKey"
+	    "api_key": "MandrillAPIKey" // Put your mandrill API key here
 	};
 	...
 ```
